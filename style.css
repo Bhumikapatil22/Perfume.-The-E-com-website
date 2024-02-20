@@ -736,7 +736,7 @@ header .fa-bars {
     }
 
     #slider figure img {
-        min-height: 30vh;
+        min-height: 45vh;
     }
 
     .home .content {
@@ -771,7 +771,7 @@ header .fa-bars {
     }
 
     .about .row .video-container video {
-        height: 30rem;
+        height: 25rem;
     }
 
     .icons-container {
