@@ -288,7 +288,7 @@ header .fa-bars {
 }
 
 .icons-container {
-    background: #eee;
+    /* background: #eee; */
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -601,9 +601,9 @@ header .fa-bars {
 
 
 /* media queries */
-@media(max-width:991px) {
+@media (min-width: 768px) and (max-width: 1024px){
     html {
-        font-size: 55%;
+        font-size: 48%;
     }
 
     header {
@@ -619,7 +619,7 @@ header .fa-bars {
     }
     .home .content h3 {
 
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .home .content span {
         font-size: 3rem;
@@ -642,7 +642,7 @@ header .fa-bars {
 
 }
 
-@media(max-width:768px) {
+@media (min-width: 491px) and (max-width: 767px){
     header .fa-bars {
         display: block;
     }
@@ -696,7 +696,11 @@ header .fa-bars {
         font-size: 1.5rem;
         padding: 0.9rem 1.9rem;
     }
-
+    #slider figure img {
+        min-height: 100vh;
+        object-fit:cover;
+        object-position: -40rem;
+    }
 
     .icons-container .icons h3 {
         font-size: 2rem;
@@ -705,7 +709,12 @@ header .fa-bars {
     .icons-container .icons span {
         font-size: 1.7rem;
     }
-
+    .products .box-container .box .content .price {
+        font-size: 2rem;
+        /* color: var(--pink);
+        font-weight: bolder;
+        padding-top: 1rem; */
+    }
     .footer .box-container .box {
         font-size: 1rem;
         flex: 1 1 1rem;
@@ -718,67 +727,118 @@ header .fa-bars {
 
 }
 
-@media(max-width: 450px) {
+@media (max-width: 490px)  {
     html {
         font-size: 50%;
     }
-
+    header .fa-bars {
+        display: block;
+    }
     header {
         padding: 2rem;
     }
 
     header .logo {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 10rem;
+        right: 10rem;
+        background: #eee;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header #toggler:checked~.navbar {
+       
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a {
+        /* margin: 1.5rem; */
+        padding: 1.5rem;
+        background: #fff;
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+    
+    .home .content {
+        top: 10rem;
+        left: 1rem;
+        right: 20rem;
+        font-size: 3rem;
 
+    }
     .heading {
         font-size: 3rem;
     }
 
     #slider figure img {
-        min-height: 30vh;
+        min-height: 100vh;
+        object-fit:cover;
+        object-position: -40rem;
     }
-
     .home .content {
+        /* position: absolute; */
         top: 10rem;
         left: 1rem;
-        right: 20rem;
+        /* right: 20rem; */
         
 
     }
 
     .home .content a.btn {
         border-radius: 5rem;
-        font-size: 1rem;
-        padding: 0.3rem 1.2rem;
+        font-size: 1.5rem;
+        padding: 0.6rem 1.5rem;
     }
 
 
     .home .content h3 {
 
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .home .content span {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .home .content p {
-        font-size: 1rem;
+        font-size: 2rem;
         color: #5c5c5c;
         /* padding: 1rem 0; */
         /* line-height: 1.5; */
     }
 
+    .more .button {
+     
+        margin-top: 3rem;
+   
+   
+        padding: 1.2rem 3.8rem;
+   
+        font-size: 1.7rem;
+    
+    }
+    
     .about .row .video-container video {
-        height: 25rem;
+        height: 30rem;
     }
 
     .icons-container {
         background-color: white;
-        ;
+        
     }
-
+    .contact .row .image img {
+        width: 100%;
+        padding: 5rem 9rem 5rem 9rem;
+    }
+    
+    .review .box-container .box .fa-quote-right {
+      
+        font-size: 3rem;
+       
+    }
     .footer .box-container .box h3 {
         font-size: 1.5rem;
     }
@@ -790,6 +850,21 @@ header .fa-bars {
 
     .footer .credit {
         font-size: 1.5rem;
+        padding:1.5rem 0 0 0;
+        /* border-top: none; */
     }
-
+    .footer .box-container .box h3 {
+        color: #333;
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .footer .box-container .box a {
+        display: block;
+        color: #666;
+        font-size: 1.1rem;
+        padding: 1rem 0;
+    }
+  
+    
 }
