@@ -601,6 +601,24 @@ header .fa-bars {
 
 
 /* media queries */
+@media(max-width:1024px){
+    #slider{
+        width:100%;
+}
+    .about{
+        width:100%;
+    }
+    .icons-container{
+        width:100%;
+    }
+    .products{
+        width:100%;
+    }
+      .products .box-container .box .content .price {
+        font-size: 2rem;
+        
+    }
+}
 @media (min-width: 768px) and (max-width: 1024px){
     html {
         font-size: 48%;
