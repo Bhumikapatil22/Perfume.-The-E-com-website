@@ -657,6 +657,13 @@ header .fa-bars {
     .footer .box-container .box h3 {
         font-size: 2rem;
     }
+        .products .box-container .box .content .price {
+        font-size: 1.5rem;
+
+}
+.products .box-container .box .content h3 {
+    font-size: 2rem;
+}
 
 }
 
